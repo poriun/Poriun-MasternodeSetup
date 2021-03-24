@@ -141,7 +141,7 @@ fi
 cd ~
 rm -rf /usr/local/bin/poriund*
 wget https://github.com/poriun/PoriunCoin/releases/download/v1.0/Poriun-daemon-ubuntu-16.04.tar.gz
-tar -xzvf Poriun-daemon-ubuntu-16.04.tar.gz
+sudo tar -xzvf Poriun-daemon-ubuntu-16.04.tar.gz
 sudo chmod -R 755 poriun-cli
 sudo chmod -R 755 poriund
 cp -p -r poriund /usr/local/bin
@@ -195,7 +195,7 @@ rpcpassword=$rpcpassword
 rpcallowip=127.0.0.1
 rpcport=$RPC
 port=$PORT
-listen=1
+listen=0
 server=1
 daemon=1
 logtimestamps=1
